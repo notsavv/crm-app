@@ -2,13 +2,13 @@ import dotenv from "dotenv"
 import express from "express"
 import cors from "cors"
 
-dotenv.config()
+dotenv.config({ path: '../.env' })
 
 const app = express()
 
 app.use(express.json())
 app.use(cors())
-
+console.log(process.env.PORT)
 app.get('/', (req,res)=>{
     res.send('server is running')
 })

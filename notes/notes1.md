@@ -85,19 +85,6 @@
     export { pool, connectDb };
     ```
 
-### Graceful Shutdown:
-- I added graceful shutdown functionality to ensure that connections are properly closed when the application is stopped (e.g., on `SIGINT` signal when I press `Ctrl+C`).
-    Example of shutting down the connection pool:
-    ```javascript
-    process.on('SIGINT', () => {
-      console.log("Closing PostgreSQL connection...");
-      pool.end(() => {
-        console.log("PostgreSQL connection closed.");
-        process.exit(0);
-      });
-    });
-    ```
-
 ## 5. Dockerized PostgreSQL and Backend Setup:
 
 ### Database Credentials in `.env`:

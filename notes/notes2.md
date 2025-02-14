@@ -1,4 +1,4 @@
-## 📌 Continuation of My Project – Expanding the Backend & Fixing PostgreSQL Connection Issues  
+## Continuation of My Project – Expanding the Backend & Fixing PostgreSQL Connection Issues  
 
 While working on this project, I encountered and resolved several issues related to **PostgreSQL connectivity**, **Docker networking**, and **environment variable management**. Below is a summary of all the debugging steps I took and the final fix that solved the issue.
 
